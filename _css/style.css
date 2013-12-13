@@ -1,6 +1,7 @@
 body {
   background: #F6F6F6;}
 
+/* Logo for the website via url*/
 #logo {
   display : block;
   height: 200px;
@@ -11,19 +12,23 @@ body {
   left: 43%;
 
 }
+/*set the img height and width*/
 img{
   width:100px;
   height:100px;
 }
+/*id for div to split content into three columns*/
 #content{
 	-webkit-column-count:3;
 	-webkit-column-gap: 10px;
 	-webkit-column-rule:3px outset black;
 }
+/*id for media logos div*/
 #medialogos{
   display: block;
   padding-top: 50px;
 }
+/* before fade for image, opacity is full*/
 .fade:before {
     content: ' ';
     width: 30px;
@@ -37,17 +42,18 @@ img{
     -webkit-border-top-right-radius: 20px;
 
 }
-
+/* on hover opacity of image is half(fade)*/
 .fade:hover {
     opacity: 0.5;
 }
+/* style for hr as a gradient fade on edges*/
 hr{
 	width: 80%;
 	height: 2px;
 	border: 0;
 	background: -webkit-linear-gradient(left,  rgba(128,128,128,0) 0%,rgba(128,128,128,0.7) 50%,rgba(128,128,128,0) 100%);
 }
-
+/* media query for tablet. Adjust the image size*/
 @media only screen and (max-width: 768px){
     .fade:before {
     width: 75px;
@@ -59,7 +65,7 @@ img{
 }
 
 }
-
+/* media query for phone. Adjust the image size*/
 @media only screen and (max-width: 480px){
 
 .fade:before {
